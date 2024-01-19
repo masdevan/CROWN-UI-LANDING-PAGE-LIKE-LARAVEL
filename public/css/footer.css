@@ -1,0 +1,67 @@
+/* Main Footer Styleing */
+.footer-outer {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 100px 0px;
+    margin-top: 20px;
+}
+.multi-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.multi-footer ul {
+    width: 25%;
+}
+.multi-footer ul h4 {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1674cd;
+}
+.multi-footer ul li a {
+    display: block;
+    padding: 5px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5f94de;
+    transition: 0.3s;
+}
+.multi-footer ul li a:hover {
+    transition: 0.3s;
+    color: #1674cd;
+}
+.footer-special {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer-special a#footer-logo {
+    margin: 0 auto;
+}
+.footer-special img {
+    height: 40px;
+    width: auto;
+}
+.footer-special strong {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: #888;
+}
+
+/* Footer Credits Style */
+.footer-credits {
+    margin: 50px 0px 0px 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.footer-credits strong {
+    color: #2e558b;
+    font-size: 12px;
+    font-weight: 400;
+}

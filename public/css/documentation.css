@@ -1,0 +1,124 @@
+/* Main Styleing */
+.docs-outer {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+}
+.docs-limit {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Animation Styleing */
+@keyframes slide-one {
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 15px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+@keyframes slide-second {
+    0% {
+        margin-left: 20px;
+    }
+    50% {
+        margin-left: 35px;
+    }
+    100% {
+        margin-left: 20px;
+    }
+}
+
+/* Right Section Styleing */
+.docs-layout {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.docs-layout h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.5;
+}
+.docs-layout h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+.docs-layout h2::before {
+    content: "# ";
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: #5f94de;
+}
+.docs-layout h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+.docs-layout h3::before {
+    content: "# ";
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: #5f94de;
+}
+.docs-layout p {
+    display: block;
+    margin-left: 50px;
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+}
+
+/* Left Section Styleing */
+.docs-left {
+    flex:1;
+    padding: 30px 30px 30px 0px;
+    border-right: 1px solid #f5f5f5;
+}
+.docs-left ul li a#main-link {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition:0.3s;
+}
+.docs-left ul li a#sub-link {
+    display: block;
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    margin-left: 20px;
+    transition:0.3s;
+}
+.docs-left ul li a#main-link:hover {
+    color: #1674cd;
+    transition: 0.3s;
+    animation: 0.5s slide-one ease-in-out;
+}
+.docs-left ul li a#sub-link:hover {
+    color: #5f94de;
+    transition: 0.3s;
+    animation: 0.5s slide-second ease-in-out;;
+}
+
+.docs-right {
+    flex:4;
+    padding: 30px 0px 30px 100px;
+}

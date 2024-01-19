@@ -1,0 +1,96 @@
+/* Main Header Styleing */
+.header-outer {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #FFF;
+    height: 70px;
+    width: 100%;
+}
+.header-height {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.header-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+}
+
+
+/* Header Logo Styleing */
+.header-logo img {
+    height: 35px;
+    width: auto;
+    margin-right: 40px;
+}
+
+
+/* Header List Styleing */
+.header-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.header-list ul li a {
+    padding: 10px 15px;
+    color: #5f94de;
+    transition: 0.3s;
+}
+.header-list ul li a:hover {
+    transition: 0.3s;
+    color: #1674cd;
+}
+
+
+/* Documentation Button*/
+.header-search {
+    margin-left: auto;
+}
+#drop-search {
+    position: relative;
+}
+.header-search span i {
+    cursor: pointer;
+    font-size: 16px;
+    color: #5b92e9;
+    padding-right: 40px;
+}
+.header-search-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: aqua;
+}
+.header-search-box input {
+    display: inline-block;
+}
+.header-search-box button {
+    display: inline-block;
+}
+
+
+.header-doc a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5089de;
+    padding: 6px 16px 5px 16px;
+    border: 2px solid #5089de;
+    transition: 0.3s;
+}
+.header-doc a:hover {
+    transition: 0.3s;
+    background: #5b92e9;
+    color: #FFF;
+}
